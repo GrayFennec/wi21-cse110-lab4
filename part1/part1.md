@@ -35,5 +35,5 @@
 16. The `==` operator converts differently typed operands to numbers, while the `===` operator does not do any type conversion.  
 17. `How are you?` will be printed. `2 == true` evaluates to `false`, so `Hello!` will not be printed. The `if` conditional requires a boolean, so `2` is type converted to `true`, which means `How are you?` will be printed.  
 19. The result will be `[6, 8, 10]`. The function `modifyArray` creates a new array with values created by running the `callback` input on the values of the old array with another input function which doubles a number. In this case, `callback` is `doSomething`, which runs its own input `callback` on its other input `num` plus two. So, in `modifyArray`, a new array is created with values created by running `doSomething` which itself runs the doubling function on the old array values incremented by two.  
-21. 
+21. The output is `1 4 3 2`, the `1` and `4` are printed as the `printNums` function executes. Then code in the second `setTimeout` executes, printing `3`. Finally, after 1000 milliseconds pass, the code in the first `setTimeout` executes, printing `2`
 </ol>
