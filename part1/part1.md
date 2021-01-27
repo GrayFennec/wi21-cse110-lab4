@@ -10,7 +10,7 @@
 10. At line 12, there will be an error, since the `const` declaration means `discountedPrice` is only in the scope of the for-loop.
 11. At line 13, the initial value of `finalPrice` will be printed, since the <const>const` declaration means `finalPrice` is function-scoped and keeps its initial value.
 12. The function will not return because of the errors in variable scope described above.
-13. 
-    A. student.name
-    B. student["Grad Year"]
+13. Here is the notation:
+    A. `student.name`
+    B. `student["Grad Year"]`
 </ol>
