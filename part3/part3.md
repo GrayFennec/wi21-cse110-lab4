@@ -1,6 +1,6 @@
-#Debugger#
+# Debugger
 The bug is that the `num1` and `num2` are both strings from `getElementById()`, and so the `calculateSum` function simply appends them and returns that. To fix this, I used `Number()` to convert `num1` and `num2` into numbers.  
-#Network tab#
+# Network tab
 1. The new json file is called citylots.json.
 2. The download was initiated by part2.js.
 3. The file size is 11.7 MB.
