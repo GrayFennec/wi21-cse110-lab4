@@ -11,4 +11,7 @@
 <li>At line 12, there will be an error, since the <code>const</code> declaration means <code>discountedPrice</code> is only in the scope of the for-loop.</li>
 <li>At line 13, the initial value of <code>finalPrice</code> will be printed, since the <const>const<code> declaration means <code>finalPrice</code> is function-scoped and keeps its initial value.</li>
 <li>The function will not return because of the errors in variable scope described above.</li>
+<li>
+    <li>student.name</li>
+    <li>student["Grad Year"]</li>
 </ol>
