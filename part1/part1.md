@@ -16,14 +16,24 @@
     C. `student.greeting()`  
     D. `student["Favorite Teacher"].name`  
     E. `student.courseLoad[0]`
-14. Arithmetic
+14. Arithmetic  
     A. `'32'`, appending to `'3'` requires a string, so `2` is type converted to `'2'`, which is then appended.  
-    B. `1`, subtracting a `2` requires an integer, so `'3'` is type converted to `3`, which is then subtracted.  
-    C. `3`, adding to `3` requires an integer, so `null` is type converted to `0`, which is then added.  
+    B. `1`, subtracting a `2` requires a number, so `'3'` is type converted to `3`, which is then subtracted.  
+    C. `3`, adding to `3` requires a number, so `null` is type converted to `0`, which is then added.  
     D. `'3null'`, appending to `'3'` requires a string, so `null` is type converted to `'null'`, which is then appended.  
-    E. `4`, adding to `3` requires an integer, so `true` is type converted to `1`, which is then added.  
-    F. `0`, adding requires integers, so `false` is type converted to `0`, and `null` is type converted to `0`, which are then added.  
+    E. `4`, adding to `3` requires a number, so `true` is type converted to `1`, which is then added.  
+    F. `0`, adding requires numbers, so `false` is type converted to `0`, and `null` is type converted to `0`, which are then added.  
     G. `"3undefined"`, appending to `"3"` requires a string, so `undefined` is type converted to `"undefined"`, which is appended.  
-    H. `NaN`, subtracting requires integers, so `"3"` is type converted to `3`, and `undefined` is type converted to `NaN`, the subtraction of `NaN` from `3` leads to an output of `NaN`  
-15. Comparison
+    H. `NaN`, subtracting requires numbers, so `"3"` is type converted to `3`, and `undefined` is type converted to `NaN`, the subtraction of `NaN` from `3` leads to an output of `NaN`  
+15. Comparison  
+    A. `true`, comparison of different types converts into numbers, so `'2'` is type converted to `2`, which is greater than `1`.  
+    B. `false`, comparison of strings uses lexicographical order, so `'2'` is greater than `'12'`.  
+    C. `true`, comparison of different types converts into numbers, so `'2'` is type converted to `2`, which is equal to `2`.
+    D. `false`, strict equality does not type convert, so `2` is not equal to `'2'`.
+    E. `false`, comparison of different types converts into numbers, so `true` is type converted to `1`, which is not equal to `2`.
+    F. `true`, `Boolean(2)` evaluates to `true`, which is equal to `true`.
+16. The `==` operator converts differently typed operands to numbers, while the `===` operator does not do any type conversion.  
+17. `How are you?` will be printed. `2 == true` evaluates to `false`, so `Hello!` will not be printed. The `if` conditional requires a boolean, so `2` is type converted to `true`, which means `How are you?` will be printed.  
+19. The result will be `[6, 8, 10]`. The function `modifyArray` creates a new array with values created by running the `callback` input on the values of the old array with another input function which doubles a number. In this case, `callback` is `doSomething`, which runs its own input `callback` on its other input `num` plus two. So, in `modifyArray`, a new array is created with values created by running `doSomething` which itself runs the doubling function on the old array values incremented by two.  
+21. 
 </ol>
